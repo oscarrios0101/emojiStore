@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "name": "Time Machine (Retro Edition)",
+    "price": 999999,
+    "emoji": "⏳",
+    "category": "Sci-Fi",
+    "tags": ["vintage", "travel", "rare"]
+  },
+  {
+    "id": 2,
+    "name": "Classic Lightsaber (Cyan)",
+    "price": 2500,
+    "emoji": "⚔️",
+    "category": "Sci-Fi",
+    "tags": ["weapon", "energy", "warrior"]
+  },
+  {
+    "id": 3,
+    "name": "Invisibility Cloak",
+    "price": 5000,
+    "emoji": "👻",
+    "category": "Magic",
+    "tags": ["stealth", "apparel", "disguise"]
+  },
+  {
+    "id": 4,
+    "name": "Teleportation Remote",
+    "price": 12000,
+    "emoji": "📟",
+    "category": "Sci-Fi",
+    "tags": ["travel", "instant", "tech"]
+  },
+  {
+    "id": 5,
+    "name": "Dragon Egg (Unhatched)",
+    "price": 45000,
+    "emoji": "🥚",
+    "category": "Pets",
+    "tags": ["mythical", "rare", "investment"]
+  },
+  {
+    "id": 6,
+    "name": "Hoverboard (No Wheels)",
+    "price": 850,
+    "emoji": "🛹",
+    "category": "Sci-Fi",
+    "tags": ["transport", "sport", "future"]
+  },
+  {
+    "id": 7,
+    "name": "Instant Coffee (Liquid Form)",
+    "price": 5,
+    "emoji": "☕",
+    "category": "Food",
+    "tags": ["beverage", "energy", "caffeine"]
+  },
+  {
+    "id": 8,
+    "name": "Universal Translator",
+    "price": 300,
+    "emoji": "👂",
+    "category": "Tech",
+    "tags": ["language", "communication", "gadget"]
+  },
+  {
+    "id": 9,
+    "name": "Shrink Ray",
+    "price": 1500,
+    "emoji": "🔫",
+    "category": "Sci-Fi",
+    "tags": ["tool", "experimental", "physics"]
+  },
+  {
+    "id": 10,
+    "name": "Growth Serum",
+    "price": 45,
+    "emoji": "🧪",
+    "category": "Chemistry",
+    "tags": ["biological", "liquid", "enhancement"]
+  },
+  {
+    "id": 11,
+    "name": "Magic Wand (Birch)",
+    "price": 120,
+    "emoji": "🪄",
+    "category": "Magic",
+    "tags": ["casting", "wood", "beginner"]
+  },
+  {
+    "id": 12,
+    "name": "Portal Gun",
+    "price": 80000,
+    "emoji": "🌀",
+    "category": "Sci-Fi",
+    "tags": ["dimension", "travel", "physics"]
+  },
+  {
+    "id": 13,
+    "name": "Anti-Gravity Boots",
+    "price": 2100,
+    "emoji": "🥾",
+    "category": "Apparel",
+    "tags": ["shoes", "flying", "heavy-duty"]
+  },
+  {
+    "id": 14,
+    "name": "Cloud in a Jar",
+    "price": 15,
+    "emoji": "🏺",
+    "category": "Decor",
+    "tags": ["nature", "weather", "atmosphere"]
+  },
+  {
+    "id": 15,
+    "name": "Talking Toaster",
+    "price": 60,
+    "emoji": "🍞",
+    "category": "Home",
+    "tags": ["kitchen", "smart", "annoying"]
+  },
+  {
+    "id": 16,
+    "name": "Ghost Vacuum",
+    "price": 400,
+    "emoji": "🧹",
+    "category": "Home",
+    "tags": ["paranormal", "cleaning", "security"]
+  },
+  {
+    "id": 17,
+    "name": "Dream Recorder",
+    "price": 250,
+    "emoji": "🛌",
+    "category": "Tech",
+    "tags": ["sleep", "video", "psychology"]
+  },
+  {
+    "id": 18,
+    "name": "Infinite Pizza Slice",
+    "price": 1000,
+    "emoji": "🍕",
+    "category": "Food",
+    "tags": ["magic", "endless", "party"]
+  },
+  {
+    "id": 19,
+    "name": "Pet Rock (Genius Level)",
+    "price": 25,
+    "emoji": "🪨",
+    "category": "Pets",
+    "tags": ["low-maintenance", "smart", "stone"]
+  },
+  {
+    "id": 20,
+    "name": "Robot Butler (Mini)",
+    "price": 3500,
+    "emoji": "🤖",
+    "category": "Home",
+    "tags": ["automation", "ai", "household"]
+  },
+  {
+    "id": 21,
+    "name": "Weather Controller",
+    "price": 15000,
+    "emoji": "🌦️",
+    "category": "Sci-Fi",
+    "tags": ["environment", "outdoor", "power"]
+  },
+  {
+    "id": 22,
+    "name": "Unicorn Horn (Vegan)",
+    "price": 95,
+    "emoji": "🦄",
+    "category": "Curiosities",
+    "tags": ["magic", "mythical", "ethically-sourced"]
+  },
+  {
+    "id": 23,
+    "name": "Mood Ring (100% Accurate)",
+    "price": 12,
+    "emoji": "💍",
+    "category": "Jewelry",
+    "tags": ["emotional", "retro", "wearable"]
+  },
+  {
+    "id": 24,
+    "name": "Rocket Skates",
+    "price": 1100,
+    "emoji": "🛼",
+    "category": "Apparel",
+    "tags": ["speed", "transport", "danger"]
+  },
+  {
+    "id": 25,
+    "name": "Personal Forcefield",
+    "price": 6000,
+    "emoji": "🛡️",
+    "category": "Tech",
+    "tags": ["defense", "safety", "invisible"]
+  },
+  {
+    "id": 26,
+    "name": "Bag of Holding",
+    "price": 200,
+    "emoji": "🛍️",
+    "category": "Magic",
+    "tags": ["storage", "utility", "travel"]
+  },
+  {
+    "id": 27,
+    "name": "Self-Typing Keyboard",
+    "price": 150,
+    "emoji": "⌨️",
+    "category": "Tech",
+    "tags": ["efficiency", "office", "lazy"]
+  },
+  {
+    "id": 28,
+    "name": "Moon Dust (Gram)",
+    "price": 500,
+    "emoji": "🌑",
+    "category": "Cosmic",
+    "tags": ["space", "rare", "collectible"]
+  },
+  {
+    "id": 29,
+    "name": "Dinosaur Bone (Authentic)",
+    "price": 12000,
+    "emoji": "🦴",
+    "category": "Curiosities",
+    "tags": ["history", "museum", "ancient"]
+  },
+  {
+    "id": 30,
+    "name": "Laser Eyes Contacts",
+    "price": 3200,
+    "emoji": "👀",
+    "category": "Apparel",
+    "tags": ["vision", "power", "cybernetic"]
+  },
+  {
+    "id": 31,
+    "name": "Memory Eraser",
+    "price": 400,
+    "emoji": "🔦",
+    "category": "Sci-Fi",
+    "tags": ["covert", "mental", "gadget"]
+  },
+  {
+    "id": 32,
+    "name": "Waterproof Water",
+    "price": 10,
+    "emoji": "💧",
+    "category": "Chemistry",
+    "tags": ["liquid", "impossible", "science"]
+  },
+  {
+    "id": 33,
+    "name": "Flying Carpet",
+    "price": 4500,
+    "emoji": "🧶",
+    "category": "Magic",
+    "tags": ["transport", "decor", "ancient"]
+  },
+  {
+    "id": 34,
+    "name": "Singing Fish Wall Mount",
+    "price": 20,
+    "emoji": "🐟",
+    "category": "Home",
+    "tags": ["entertainment", "decor", "gift"]
+  },
+  {
+    "id": 35,
+    "name": "Cybernetic Eyeball",
+    "price": 7000,
+    "emoji": "👁️",
+    "category": "Tech",
+    "tags": ["replacement", "vision", "bionic"]
+  },
+  {
+    "id": 36,
+    "name": "Brain-in-a-Vat",
+    "price": 50000,
+    "emoji": "🧠",
+    "category": "Medical",
+    "tags": ["intellect", "display", "creepy"]
+  },
+  {
+    "id": 37,
+    "name": "Glow-in-the-Dark Cat",
+    "price": 800,
+    "emoji": "🐈",
+    "category": "Pets",
+    "tags": ["night-light", "feline", "neon"]
+  },
+  {
+    "id": 38,
+    "name": "Solar Powered Flashlight",
+    "price": 15,
+    "emoji": "🔦",
+    "category": "Tech",
+    "tags": ["outdoor", "energy", "utility"]
+  },
+  {
+    "id": 39,
+    "name": "Jar of Fireflies",
+    "price": 25,
+    "emoji": "🫙",
+    "category": "Decor",
+    "tags": ["lighting", "nature", "summer"]
+  },
+  {
+    "id": 40,
+    "name": "X-Ray Goggles",
+    "price": 1200,
+    "emoji": "🥽",
+    "category": "Tech",
+    "tags": ["vision", "stealth", "toy"]
+  },
+  {
+    "id": 41,
+    "name": "Gravity Grenade",
+    "price": 350,
+    "emoji": "💣",
+    "category": "Sci-Fi",
+    "tags": ["weapon", "physics", "tactical"]
+  },
+  {
+    "id": 42,
+    "name": "Pocket Black Hole",
+    "price": 1000000,
+    "emoji": "🕳️",
+    "category": "Cosmic",
+    "tags": ["physics", "dangerous", "storage"]
+  },
+  {
+    "id": 43,
+    "name": "Star in a Box",
+    "price": 75000,
+    "emoji": "📦",
+    "category": "Cosmic",
+    "tags": ["lighting", "power", "rare"]
+  },
+  {
+    "id": 44,
+    "name": "Elastic Arms Serum",
+    "price": 200,
+    "emoji": "🧪",
+    "category": "Chemistry",
+    "tags": ["mutation", "physical", "temporary"]
+  },
+  {
+    "id": 45,
+    "name": "Sonic Screwdriver",
+    "price": 600,
+    "emoji": "🪛",
+    "category": "Sci-Fi",
+    "tags": ["tool", "utility", "gadget"]
+  },
+  {
+    "id": 46,
+    "name": "Never-Ending Ball of Yarn",
+    "price": 30,
+    "emoji": "🧶",
+    "category": "Pets",
+    "tags": ["infinite", "cat", "hobby"]
+  },
+  {
+    "id": 47,
+    "name": "Telepathic Headband",
+    "price": 950,
+    "emoji": "🧠",
+    "category": "Tech",
+    "tags": ["mental", "communication", "psychic"]
+  },
+  {
+    "id": 48,
+    "name": "Feather of Icarus",
+    "price": 5000,
+    "emoji": "🪶",
+    "category": "Curiosities",
+    "tags": ["mythical", "flight", "fragile"]
+  },
+  {
+    "id": 49,
+    "name": "Phoenix Down",
+    "price": 1500,
+    "emoji": "🔥",
+    "category": "Medical",
+    "tags": ["revival", "mythical", "healing"]
+  },
+  {
+    "id": 50,
+    "name": "Stealth Suit",
+    "price": 4000,
+    "emoji": "👤",
+    "category": "Apparel",
+    "tags": ["spy", "tactical", "armor"]
+  },
+  {
+    "id": 51,
+    "name": "Hover-Bike",
+    "price": 18000,
+    "emoji": "🏍️",
+    "category": "Sci-Fi",
+    "tags": ["vehicle", "speed", "transport"]
+  },
+  {
+    "id": 52,
+    "name": "Golden Fleece",
+    "price": 25000,
+    "emoji": "🐑",
+    "category": "Curiosities",
+    "tags": ["wealth", "mythical", "fabric"]
+  },
+  {
+    "id": 53,
+    "name": "Midas Touch Glove",
+    "price": 50000,
+    "emoji": "🧤",
+    "category": "Magic",
+    "tags": ["wealth", "cursed", "gold"]
+  },
+  {
+    "id": 54,
+    "name": "Canned Laughter",
+    "price": 5,
+    "emoji": "🥫",
+    "category": "Gifts",
+    "tags": ["humor", "sound", "prank"]
+  },
+  {
+    "id": 55,
+    "name": "Liquid Luck",
+    "price": 200,
+    "emoji": "🧪",
+    "category": "Magic",
+    "tags": ["potion", "temporary", "gambling"]
+  },
+  {
+    "id": 56,
+    "name": "Excalibur (Replica)",
+    "price": 450,
+    "emoji": "🗡️",
+    "category": "Curiosities",
+    "tags": ["sword", "king", "display"]
+  },
+  {
+    "id": 57,
+    "name": "Space Suit (Mars Rated)",
+    "price": 12000,
+    "emoji": "👨‍🚀",
+    "category": "Cosmic",
+    "tags": ["apparel", "exploration", "survival"]
+  },
+  {
+    "id": 58,
+    "name": "Jetpack (Single Use)",
+    "price": 900,
+    "emoji": "🎒",
+    "category": "Sci-Fi",
+    "tags": ["flight", "emergency", "fuel"]
+  },
+  {
+    "id": 59,
+    "name": "Miniature Elephant",
+    "price": 3000,
+    "emoji": "🐘",
+    "category": "Pets",
+    "tags": ["pocket-sized", "animal", "adorable"]
+  },
+  {
+    "id": 60,
+    "name": "Quantum CPU",
+    "price": 8500,
+    "emoji": "💾",
+    "category": "Tech",
+    "tags": ["computer", "fast", "experimental"]
+  },
+  {
+    "id": 61,
+    "name": "Eternal Candle",
+    "price": 40,
+    "emoji": "🕯️",
+    "category": "Home",
+    "tags": ["light", "decor", "everlasting"]
+  },
+  {
+    "id": 62,
+    "name": "Submarine Car",
+    "price": 65000,
+    "emoji": "🚗",
+    "category": "Sci-Fi",
+    "tags": ["vehicle", "water", "spy"]
+  },
+  {
+    "id": 63,
+    "name": "Vampire Repellent",
+    "price": 15,
+    "emoji": "🧄",
+    "category": "Safety",
+    "tags": ["monster", "smelly", "spray"]
+  },
+  {
+    "id": 64,
+    "name": "Werewolf Leash",
+    "price": 50,
+    "emoji": "🐕",
+    "category": "Pets",
+    "tags": ["heavy-duty", "monster", "secure"]
+  },
+  {
+    "id": 65,
+    "name": "Medusa Mirror",
+    "price": 300,
+    "emoji": "🪞",
+    "category": "Magic",
+    "tags": ["defense", "mythical", "glass"]
+  },
+  {
+    "id": 66,
+    "name": "Zeus' Lightning Bolt",
+    "price": 100000,
+    "emoji": "⚡",
+    "category": "Cosmic",
+    "tags": ["godly", "weapon", "electricity"]
+  },
+  {
+    "id": 67,
+    "name": "Poseidon's Trident",
+    "price": 85000,
+    "emoji": "🔱",
+    "category": "Cosmic",
+    "tags": ["ocean", "power", "mythical"]
+  },
+  {
+    "id": 68,
+    "name": "Hades' Helmet",
+    "price": 70000,
+    "emoji": "⛑️",
+    "category": "Cosmic",
+    "tags": ["stealth", "darkness", "godly"]
+  },
+  {
+    "id": 69,
+    "name": "Alien Artifact",
+    "price": 500,
+    "emoji": "🗿",
+    "category": "Curiosities",
+    "tags": ["space", "unknown", "history"]
+  },
+  {
+    "id": 70,
+    "name": "Invisible Ink",
+    "price": 8,
+    "emoji": "✒️",
+    "category": "Office",
+    "tags": ["spy", "writing", "covert"]
+  },
+  {
+    "id": 71,
+    "name": "Bottomless Coffee Mug",
+    "price": 120,
+    "emoji": "☕",
+    "category": "Home",
+    "tags": ["beverage", "office", "infinite"]
+  },
+  {
+    "id": 72,
+    "name": "Self-Cleaning Shirt",
+    "price": 85,
+    "emoji": "👕",
+    "category": "Apparel",
+    "tags": ["fashion", "hygiene", "lazy"]
+  },
+  {
+    "id": 73,
+    "name": "Hypno-Glasses",
+    "price": 45,
+    "emoji": "👓",
+    "category": "Tech",
+    "tags": ["mind-control", "fashion", "prank"]
+  },
+  {
+    "id": 74,
+    "name": "Banana Phone",
+    "price": 200,
+    "emoji": "🍌",
+    "category": "Tech",
+    "tags": ["wireless", "fruit", "joke"]
+  },
+  {
+    "id": 75,
+    "name": "Crystal Ball",
+    "price": 150,
+    "emoji": "🔮",
+    "category": "Magic",
+    "tags": ["future", "psychic", "glass"]
+  },
+  {
+    "id": 76,
+    "name": "Rainbow in a Bottle",
+    "price": 55,
+    "emoji": "🌈",
+    "category": "Decor",
+    "tags": ["color", "magical", "light"]
+  },
+  {
+    "id": 77,
+    "name": "Pet Dinosaur (Small)",
+    "price": 4000,
+    "emoji": "🦖",
+    "category": "Pets",
+    "tags": ["ancient", "dangerous", "cool"]
+  },
+  {
+    "id": 78,
+    "name": "Ice Cream That Never Melts",
+    "price": 12,
+    "emoji": "🍦",
+    "category": "Food",
+    "tags": ["frozen", "science", "snack"]
+  },
+  {
+    "id": 79,
+    "name": "Remote Control for People",
+    "price": 99999,
+    "emoji": "🎮",
+    "category": "Sci-Fi",
+    "tags": ["control", "unethical", "gadget"]
+  },
+  {
+    "id": 80,
+    "name": "Super-Speed Sneakers",
+    "price": 350,
+    "emoji": "👟",
+    "category": "Apparel",
+    "tags": ["sports", "fast", "active"]
+  },
+  {
+    "id": 81,
+    "name": "Giant Magnet",
+    "price": 100,
+    "emoji": "🧲",
+    "category": "Tech",
+    "tags": ["industrial", "heavy", "science"]
+  },
+  {
+    "id": 82,
+    "name": "Flying Umbrella",
+    "price": 250,
+    "emoji": "☂️",
+    "category": "Magic",
+    "tags": ["weather", "transport", "nanny"]
+  },
+  {
+    "id": 83,
+    "name": "DNA Editing Kit",
+    "price": 6000,
+    "emoji": "🧬",
+    "category": "Medical",
+    "tags": ["genetics", "diy", "science"]
+  },
+  {
+    "id": 84,
+    "name": "Robot Puppy",
+    "price": 1200,
+    "emoji": "🐶",
+    "category": "Pets",
+    "tags": ["robot", "toy", "no-mess"]
+  },
+  {
+    "id": 85,
+    "name": "Portable Wormhole",
+    "price": 45000,
+    "emoji": "🌀",
+    "category": "Sci-Fi",
+    "tags": ["travel", "shortcut", "physics"]
+  },
+  {
+    "id": 86,
+    "name": "Moon Shoes",
+    "price": 150,
+    "emoji": "👞",
+    "category": "Apparel",
+    "tags": ["low-gravity", "jump", "fun"]
+  },
+  {
+    "id": 87,
+    "name": "Mars Rock",
+    "price": 300,
+    "emoji": "🪨",
+    "category": "Cosmic",
+    "tags": ["space", "red", "collectible"]
+  },
+  {
+    "id": 88,
+    "name": "Comet Tail Dust",
+    "price": 1200,
+    "emoji": "☄️",
+    "category": "Cosmic",
+    "tags": ["magic", "shiny", "rare"]
+  },
+  {
+    "id": 89,
+    "name": "Saturn Ring Fragment",
+    "price": 8000,
+    "emoji": "🪐",
+    "category": "Cosmic",
+    "tags": ["ice", "rock", "astronomy"]
+  },
+  {
+    "id": 90,
+    "name": "Binary Code Necklace",
+    "price": 30,
+    "emoji": "📿",
+    "category": "Jewelry",
+    "tags": ["geek", "fashion", "digital"]
+  },
+  {
+    "id": 91,
+    "name": "Steampunk Compass",
+    "price": 110,
+    "emoji": "🧭",
+    "category": "Curiosities",
+    "tags": ["navigation", "brass", "aesthetic"]
+  },
+  {
+    "id": 92,
+    "name": "Tesla Coil (Desktop)",
+    "price": 400,
+    "emoji": "🗜️",
+    "category": "Tech",
+    "tags": ["physics", "electricity", "desk"]
+  },
+  {
+    "id": 93,
+    "name": "Hover-Tent",
+    "price": 1500,
+    "emoji": "⛺",
+    "category": "Outdoor",
+    "tags": ["camping", "comfortable", "flying"]
+  },
+  {
+    "id": 94,
+    "name": "Encrypted Diary",
+    "price": 50,
+    "emoji": "📔",
+    "category": "Office",
+    "tags": ["privacy", "locked", "secrets"]
+  },
+  {
+    "id": 95,
+    "name": "Anti-Aging Apple",
+    "price": 500,
+    "emoji": "🍎",
+    "category": "Medical",
+    "tags": ["food", "beauty", "magical"]
+  },
+  {
+    "id": 96,
+    "name": "Philosopher's Stone",
+    "price": 10000000,
+    "emoji": "💎",
+    "category": "Magic",
+    "tags": ["alchemy", "immortality", "wealth"]
+  },
+  {
+    "id": 97,
+    "name": "Shrunken Head",
+    "price": 120,
+    "emoji": "🗿",
+    "category": "Curiosities",
+    "tags": ["tribal", "spooky", "ancient"]
+  },
+  {
+    "id": 98,
+    "name": "Magic Beans (3-Pack)",
+    "price": 15,
+    "emoji": "🫘",
+    "category": "Magic",
+    "tags": ["garden", "giants", "nature"]
+  },
+  {
+    "id": 99,
+    "name": "Flying Pig (Pet)",
+    "price": 8000,
+    "emoji": "🐷",
+    "category": "Pets",
+    "tags": ["mythical", "impossible", "cute"]
+  },
+  {
+    "id": 100,
+    "name": "The Meaning of Life",
+    "price": 42,
+    "emoji": "❔",
+    "category": "Curiosities",
+    "tags": ["philosophy", "ultimate", "cheap"]
+  }
+]
