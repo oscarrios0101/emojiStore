@@ -1,29 +1,27 @@
-import { useContext } from "react";
-import { ProductContext } from "../context/ProductContext";
+import { useProducts } from "../hooks/useProducts";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
-  const { products, isLoading } = useContext(ProductContext);
-  console.log(products, isLoading);
+  const { products, isLoading } = useProducts();
   if (isLoading) {
     return (
-      <div className="flex justify-center items-center min-h-[50vh]">
-        <div className="text-xl font-medium text-slate-400 animate-pulse">
-          content loading...
-        </div>
+      <div>
+        <div>content loading...</div>
       </div>
     );
   }
 
   return (
-    <main>
-      <header>
-        <h1>The only store with very fake items</h1>
+    <main className="bg-slate-950 min-h-screen">
+      <header className="flex flex-col items-center justify-center">
+        <h1 className="text-center w-full text-3xl font-bold py-3 text-slate-100">
+          emojiStore
+        </h1>
+        <h2 className="text-slate-100">The only store with very fake items</h2>
       </header>
-      <section id="product-grid">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 max-w-7xl mx-auto">
         {products.slice(0, 10).map((product) => (
-          <div key={product.id} className="p-4 border border-slate-700 rounded">
-            {product.emoji} {product.name} - ${product.price}
-          </div>
+          <ProductCard key={product.id} product={product} />
         ))}
       </section>
     </main>

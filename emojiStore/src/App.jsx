@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import { ProductProvider } from "./context/ProductContext";
-import { CartProvaider } from "./context/CartContext";
+import { CartProvider } from "./context/CartContext";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
 import Success from "./pages/Success";
@@ -10,7 +10,7 @@ const App = () => {
     <ProductProvider>
       <CartProvider>
         <BrowserRouter>
-          <div className="min-h-screen bg-slate-900 text-white font-sans">
+          <div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/checkout" element={<Checkout />} />
