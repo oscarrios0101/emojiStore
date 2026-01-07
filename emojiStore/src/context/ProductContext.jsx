@@ -9,7 +9,7 @@ export const ProductProvider = ({ children }) => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setProducts(ItemsData);
+      setProducts(ItemsData.map((item) => ({ ...item, quantity: 1 })));
       setIsLoading(false);
     }, 1000);
 

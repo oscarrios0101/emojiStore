@@ -10,9 +10,7 @@ const ProductCard = ({ product }) => {
   };
 
   const handleAddToCart = () => {
-    for (let i = 0; i < quantity; i++) {
-      addToCart(product);
-    }
+    addToCart(product, quantity);
     setQuantity(1);
   };
 
