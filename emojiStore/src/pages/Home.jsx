@@ -1,12 +1,15 @@
 import { useProducts } from "../hooks/useProducts";
 import ProductCard from "../components/ProductCard";
+import ShowMoreProducts from "../components/ui/ShowMoreProducts";
 
 const Home = () => {
   const { products, isLoading } = useProducts();
   if (isLoading) {
     return (
-      <div>
-        <div>content loading...</div>
+      <div className="bg-slate-950 min-h-screen flex items-center justify-center">
+        <div className="text-slate-100 text-xl font-bold">
+          content loading...
+        </div>
       </div>
     );
   }
@@ -26,6 +29,7 @@ const Home = () => {
           <ProductCard key={product.id} product={product} />
         ))}
       </section>
+      <ShowMoreProducts />
     </main>
   );
 };
