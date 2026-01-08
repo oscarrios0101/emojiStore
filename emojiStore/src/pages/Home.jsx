@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <main className="bg-slate-950 min-h-screen">
-      <header className="flex flex-col items-center justify-start border border-red-800 py-4 overflow-hidden">
+      <header className="flex flex-col items-center justify-start border  py-4 overflow-hidden">
         <h1 className="text-center w-full text-3xl font-bold text-slate-100 max-w-full">
           emojiStore
         </h1>

@@ -15,13 +15,23 @@ const Checkout = () => {
         {cart.map((item) => (
           <div
             key={item.id}
-            className="grid grid-cols-6 gap-4 border border-red-800 w-full items-center p-2 mb-2"
+            className="grid grid-cols-6 gap-4 border-y-2 border-slate-800 w-full items-center p-2 mb-2"
           >
             <div className=" whitespace-normal text-center">{item.name}</div>
             <div>{item.emoji}</div>
-            <div>${item.price}</div>
+            <div>
+              {`item price : ${new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD",
+              }).format(item.price)} `}
+            </div>
             <div>amount: {item.quantity}</div>
-            <div>total: ${item.price * item.quantity}</div>
+            <div>
+              {`total: ${new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD",
+              }).format(item.price * item.quantity)}`}
+            </div>
             <div className="flex items-center justify-center gap-2">
               <button
                 className="px-2 bg-slate-700 rounded hover:bg-slate-600"

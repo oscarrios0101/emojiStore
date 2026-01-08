@@ -14,6 +14,12 @@ const Navbar = () => {
           emojiStore
         </Link>
         <Link
+          to="/goals"
+          className="text-slate-100 hover:text-sky-400 font-medium transition-colors"
+        >
+          Goals
+        </Link>
+        <Link
           to="/checkout"
           className="text-slate-100 hover:text-sky-400 font-medium transition-colors"
         >

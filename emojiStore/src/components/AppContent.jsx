@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Home from "../pages/Home";
 import Checkout from "../pages/Checkout";
 import Success from "../pages/Success";
+import Goals from "./Goals";
 import { useProducts } from "../hooks/useProducts";
 
 const AppContent = () => {
@@ -24,6 +25,7 @@ const AppContent = () => {
           <Route path="/" element={<Home />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/success" element={<Success />} />
+          <Route path="/goals" element={<Goals />} />
         </Routes>
       </div>
     </BrowserRouter>
