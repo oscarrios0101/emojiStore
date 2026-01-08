@@ -24,8 +24,34 @@ export const CartProvider = ({ children }) => {
     setCart((prevCart) => handleQuantity(prevCart, product, quantityToAdd));
   };
 
+  const substractFromCart = (product, quantityToSubstract = 1) => {
+    console.log(
+      "Substracting from cart:",
+      product,
+      "quantity:",
+      quantityToSubstract
+    );
+    setCart((prevCart) => {
+      prevCart = prevCart.map((item) => {
+        return item.id === product.id
+          ? { ...item, quantity: item.quantity - quantityToSubstract }
+          : item;
+      });
+      return prevCart.filter((item) => item.quantity > 0);
+    });
+  };
+
+  const removeFromCart = (product) => {
+    console.log("Removing from cart:", product);
+    setCart((prevCart) => {
+      return prevCart.filter((item) => item.id !== product.id);
+    });
+  };
+
   return (
-    <CartContext.Provider value={{ cart, setCart, addToCart }}>
+    <CartContext.Provider
+      value={{ cart, setCart, addToCart, substractFromCart, removeFromCart }}
+    >
       {children}
     </CartContext.Provider>
   );

@@ -16,11 +16,11 @@ const Home = () => {
 
   return (
     <main className="bg-slate-950 min-h-screen">
-      <header className="flex flex-col items-center justify-center">
-        <h1 className="text-center w-full text-3xl font-bold py-3 text-slate-100">
+      <header className="flex flex-col items-center justify-start border border-red-800 py-4 overflow-hidden">
+        <h1 className="text-center w-full text-3xl font-bold text-slate-100 max-w-full">
           emojiStore
         </h1>
-        <h2 className="text-slate-100 pt-1">
+        <h2 className="text-slate-100 pt-1 max-w-full">
           The only store with very fake items
         </h2>
       </header>
