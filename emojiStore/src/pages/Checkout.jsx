@@ -1,23 +1,24 @@
 import { useCart } from "../hooks/useCart";
+import { Link } from "react-router";
 
 const Checkout = () => {
   const { cart, addToCart, removeFromCart, substractFromCart } = useCart();
 
   const cartTotal = cart.reduce(
     (total, item) => total + item.price * item.quantity,
-    0
+    0,
   );
 
   return (
-    <div className="pt-10">
-      <section className="bg-slate-900 w-[80vw] flex flex-col items-center justify-center text-center text-slate-100 py-3.5 h-[80vh] mx-auto">
+    <div className="pt-1">
+      <section className="mx-auto mt-15 flex h-[80vh] w-[80vw] flex-col items-center justify-start bg-slate-900 py-3.5 text-center text-slate-100">
         {cart.length === 0 && <div>EMPTY CART!</div>}
         {cart.map((item) => (
           <div
             key={item.id}
-            className="grid grid-cols-6 gap-4 border-y-2 border-slate-800 w-full items-center p-2 mb-2"
+            className="mb-2 flex w-full flex-col items-center gap-4 border-y-2 border-slate-800 p-2 md:grid md:grid-cols-6"
           >
-            <div className=" whitespace-normal text-center">{item.name}</div>
+            <div className="text-center whitespace-normal">{item.name}</div>
             <div>{item.emoji}</div>
             <div>
               {`item price : ${new Intl.NumberFormat("en-US", {
@@ -32,16 +33,16 @@ const Checkout = () => {
                 currency: "USD",
               }).format(item.price * item.quantity)}`}
             </div>
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex w-full items-center justify-center gap-2">
               <button
-                className="px-2 bg-slate-700 rounded hover:bg-slate-600"
+                className="rounded bg-slate-700 px-2 hover:bg-slate-600"
                 onClick={() => substractFromCart(item)}
               >
                 -
               </button>
               <span>{item.quantity}</span>
               <button
-                className="px-2 bg-slate-700 rounded hover:bg-slate-600"
+                className="rounded bg-slate-700 px-2 hover:bg-slate-600"
                 onClick={() => addToCart(item)}
               >
                 +
@@ -50,6 +51,22 @@ const Checkout = () => {
             </div>
           </div>
         ))}
+
+        {cart.length > 0 && (
+          <div className="mt-2 w-1/2 text-center">
+            your total is{" "}
+            {new Intl.NumberFormat("en-US", {
+              style: "currency",
+              currency: "USD",
+            }).format(cartTotal)}
+            <Link
+              to="/success"
+              className="mt-2 block w-full rounded border border-sky-400 py-2 font-bold text-sky-400 transition-colors hover:bg-slate-700"
+            >
+              Proceed to Payment
+            </Link>
+          </div>
+        )}
       </section>
     </div>
   );

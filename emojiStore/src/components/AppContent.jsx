@@ -11,7 +11,7 @@ const AppContent = () => {
 
   if (isLoading) {
     return (
-      <div className="text-slate-100 text-center pt-20 bg-slate-950 min-h-screen">
+      <div className="min-h-screen bg-slate-950 pt-20 text-center text-slate-100">
         Loading...
       </div>
     );
@@ -20,7 +20,7 @@ const AppContent = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="bg-slate-950 min-h-screen">
+      <div className="min-h-screen bg-slate-950">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/checkout" element={<Checkout />} />
