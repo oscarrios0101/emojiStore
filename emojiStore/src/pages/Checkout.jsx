@@ -1,5 +1,6 @@
 import { useCart } from "../hooks/useCart";
 import { Link } from "react-router";
+import Button from "../components/ui/Button";
 
 const Checkout = () => {
   const { cart, addToCart, removeFromCart, substractFromCart } = useCart();
@@ -34,20 +35,16 @@ const Checkout = () => {
               }).format(item.price * item.quantity)}`}
             </div>
             <div className="flex w-full items-center justify-center gap-2">
-              <button
-                className="rounded bg-slate-700 px-2 hover:bg-slate-600"
-                onClick={() => substractFromCart(item)}
-              >
+              <Button variant="icon" onClick={() => substractFromCart(item)}>
                 -
-              </button>
+              </Button>
               <span>{item.quantity}</span>
-              <button
-                className="rounded bg-slate-700 px-2 hover:bg-slate-600"
-                onClick={() => addToCart(item)}
-              >
+              <Button variant="icon" onClick={() => addToCart(item)}>
                 +
-              </button>
-              <button onClick={() => removeFromCart(item)}>🗑️</button>
+              </Button>
+              <Button variant="danger" onClick={() => removeFromCart(item)}>
+                🗑️
+              </Button>
             </div>
           </div>
         ))}
@@ -59,11 +56,10 @@ const Checkout = () => {
               style: "currency",
               currency: "USD",
             }).format(cartTotal)}
-            <Link
-              to="/success"
-              className="mt-2 block w-full rounded border border-sky-400 py-2 font-bold text-sky-400 transition-colors hover:bg-slate-700"
-            >
-              Proceed to Payment
+            <Link to="/success">
+              <Button variant="success" className="mx-auto mt-5 w-auto p-2">
+                Proceed to payment
+              </Button>
             </Link>
           </div>
         )}

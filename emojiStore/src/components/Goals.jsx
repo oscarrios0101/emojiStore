@@ -35,8 +35,8 @@ const Goals = () => {
   ];
 
   return (
-    <section className="text-slate-100 max-w-4xl mx-auto px-6 py-10">
-      <h2 className="font-bold text-3xl mb-8 text-center">
+    <section className="mx-auto max-w-4xl px-6 py-10 text-slate-100">
+      <h2 className="mb-8 text-center text-3xl font-bold">
         Learning Journey 🚀
       </h2>
       <div className="space-y-6">

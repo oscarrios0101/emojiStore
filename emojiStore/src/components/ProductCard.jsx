@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useCart } from "../hooks/useCart";
+import Button from "./ui/Button";
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
@@ -21,7 +22,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="flex cursor-pointer flex-col items-center rounded-lg border border-slate-800 bg-slate-900 p-4 text-center">
+    <div className="flex flex-col items-center rounded-lg border border-slate-800 bg-slate-900 p-4 text-center">
       <span className="mb-2 text-4xl">{product.emoji}</span>
       <h2 className="font-semibold text-slate-100">{product.name}</h2>
       <p className="text-slate-400">
@@ -31,29 +32,23 @@ const ProductCard = ({ product }) => {
         }).format(product.price)}`}
       </p>
       <div className="my-3 flex items-center gap-3">
-        <button
+        <Button
+          variant="icon"
           onClick={handleDecrement}
           disabled={quantity <= 1}
-          className="flex h-8 w-8 items-center justify-center rounded border border-slate-700 bg-slate-800 text-slate-100 hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-50"
         >
           -
-        </button>
+        </Button>
         <span className="w-4 text-center font-medium text-slate-100">
           {quantity}
         </span>
-        <button
-          onClick={handleIncrement}
-          className="flex h-8 w-8 items-center justify-center rounded border border-slate-700 bg-slate-800 text-slate-100 hover:bg-slate-700"
-        >
+        <Button variant="icon" onClick={handleIncrement}>
           +
-        </button>
+        </Button>
       </div>
-      <button
-        onClick={handleAddToCart}
-        className="mt-auto w-full rounded border border-sky-400 py-2 font-bold text-sky-400 transition-colors hover:bg-slate-700"
-      >
+      <Button onClick={handleAddToCart} className="mt-auto">
         Add {quantity > 1 ? `${quantity} ` : ""}to Cart
-      </button>
+      </Button>
     </div>
   );
 };
