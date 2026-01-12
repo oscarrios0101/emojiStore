@@ -6,31 +6,31 @@ const Goals = () => {
       emoji: "🧠",
       title: "React Mindset",
       description:
-        "I'm gaining familiarity with the React way of thinking, especially the immutability of state.",
+        "Adopting the React way of thinking, specifically focusing on the power of state immutability and declarative UI patterns.",
     },
     {
       emoji: "📦",
-      title: "Context Architecture",
+      title: "Scalable Architecture",
       description:
-        "Using 2 contexts instead of 1 (one for products and one for the cart) to keep concerns separated. Also, not using context for every single thing because when looping an array, it is better to pass props (maybe it is even the correct way).",
+        "Decoupling product and cart logic into separate contexts. This modular approach ensures the app is ready for future integration with Supabase or PostgreSQL without creating a monolithic state.",
     },
     {
       emoji: "⚡",
       title: "Data Optimization",
       description:
-        "Adding the quantity property to each product when the app loads greatly reduces code complexity.",
+        "Injecting a quantity property into the product data at initialization to streamline state updates and reduce code complexity.",
     },
     {
       emoji: "🤖",
       title: "AI-Assisted Development",
       description:
-        "Using AI (the Gemini extension in VS Code and the Kilo Code extension using the Qwen 3 API key) to ask questions and clarify concepts, while giving it corrections or second-guessing its decisions.",
+        "Leveraging tools like Gemini and Qwen 3 to clarify complex concepts while critically evaluating and refining AI-generated suggestions.",
     },
     {
       emoji: "🎨",
       title: "Tailwind CSS",
       description:
-        "Using Tailwind CSS styles while gaining familiarity with it. Balancing using inline tailwind classes vs a dedicated component",
+        "Building fluency in Tailwind CSS by balancing the speed of utility classes with the maintainability of dedicated UI components.",
     },
   ];
 
