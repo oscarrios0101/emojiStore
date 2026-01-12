@@ -30,7 +30,7 @@ const Goals = () => {
       emoji: "🎨",
       title: "Tailwind CSS",
       description:
-        "Using Tailwind CSS styles while gaining familiarity with it.",
+        "Using Tailwind CSS styles while gaining familiarity with it. Balancing using inline tailwind classes vs a dedicated component",
     },
   ];
 

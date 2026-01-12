@@ -1,9 +1,16 @@
+import { useState } from "react";
 import { useProducts } from "../hooks/useProducts";
 import ProductCard from "../components/ProductCard";
-import ShowMoreProducts from "../components/ui/ShowMoreProducts";
+import Button from "../components/ui/Button";
 
 const Home = () => {
   const { products, isLoading } = useProducts();
+  const [visibleCount, setVisibleCount] = useState(10);
+
+  const handleShowMore = () => {
+    setVisibleCount((prev) => prev + 10);
+  };
+
   if (isLoading) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-slate-950">
@@ -25,11 +32,19 @@ const Home = () => {
         </h2>
       </header>
       <section className="mx-auto grid max-w-7xl grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {products.slice(0, 10).map((product) => (
+        {products.slice(0, visibleCount).map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </section>
-      <ShowMoreProducts />
+      {visibleCount < products.length && (
+        <Button
+          variant="success"
+          className="mx-auto w-auto p-2"
+          onClick={handleShowMore}
+        >
+          Show more products
+        </Button>
+      )}
     </main>
   );
 };
