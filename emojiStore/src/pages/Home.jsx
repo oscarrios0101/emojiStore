@@ -1,15 +1,30 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useProducts } from "../hooks/useProducts";
+import { usePagination } from "../hooks/usePagination";
 import ProductCard from "../components/ProductCard";
 import Button from "../components/ui/Button";
+import FeaturedItem from "../components/ui/featuredItem";
+import Pagination from "../components/Pagination";
 
 const Home = () => {
   const { products, isLoading } = useProducts();
-  const [visibleCount, setVisibleCount] = useState(10);
+  const [itemsPerPage, setItemsPerPage] = useState(12);
 
-  const handleShowMore = () => {
-    setVisibleCount((prev) => prev + 10);
-  };
+  const featuredProduct = useMemo(() => {
+    if (products.length === 0) return null;
+    return products[Math.floor(Math.random() * products.length)];
+  }, [products]);
+
+  const {
+    currentItems,
+    currentPage,
+    totalPages,
+    hasNextPage,
+    hasPrevPage,
+    goToPage,
+    nextPage,
+    prevPage,
+  } = usePagination(products, itemsPerPage);
 
   if (isLoading) {
     return (
@@ -31,19 +46,39 @@ const Home = () => {
           The only store with very fake items
         </h2>
       </header>
-      <section className="mx-auto grid max-w-7xl grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {products.slice(0, visibleCount).map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </section>
-      {visibleCount < products.length && (
-        <Button
-          variant="success"
-          className="mx-auto w-auto p-2"
-          onClick={handleShowMore}
-        >
-          Show more products
-        </Button>
+      <FeaturedItem product={featuredProduct} />
+      <div className="mx-auto max-w-7xl p-6">
+        <div className="mb-4 flex justify-end">
+          <select
+            value={itemsPerPage}
+            onChange={(e) => {
+              setItemsPerPage(Number(e.target.value));
+              goToPage(1); // Reset to first page when changing items per page
+            }}
+            className="rounded border border-slate-700 bg-slate-800 p-2 text-slate-100"
+          >
+            <option value={6}>6 per page</option>
+            <option value={12}>12 per page</option>
+            <option value={24}>24 per page</option>
+            <option value={48}>48 per page</option>
+          </select>
+        </div>
+        <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {currentItems.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </section>
+      </div>
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          hasNextPage={hasNextPage}
+          hasPrevPage={hasPrevPage}
+          goToPage={goToPage}
+          nextPage={nextPage}
+          prevPage={prevPage}
+        />
       )}
     </main>
   );
