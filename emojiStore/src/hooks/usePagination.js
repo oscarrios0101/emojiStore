@@ -1,7 +1,12 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 export const usePagination = (items = [], itemsPerPage = 10) => {
   const [currentPage, setCurrentPage] = useState(1);
+
+  // Reset to page 1 if the items array changes (e.g. searching/filtering)
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [items, itemsPerPage]);
 
   const { currentItems, totalPages, hasNextPage, hasPrevPage } = useMemo(() => {
     const totalPages = Math.ceil(items.length / itemsPerPage);
@@ -16,12 +21,6 @@ export const usePagination = (items = [], itemsPerPage = 10) => {
       hasPrevPage: currentPage > 1,
     };
   }, [items, currentPage, itemsPerPage]);
-
-  const goToPage = (page) => {
-    if (page >= 1 && page <= totalPages) {
-      setCurrentPage(page);
-    }
-  };
 
   const nextPage = () => {
     if (hasNextPage) {
@@ -41,7 +40,6 @@ export const usePagination = (items = [], itemsPerPage = 10) => {
     totalPages,
     hasNextPage,
     hasPrevPage,
-    goToPage,
     nextPage,
     prevPage,
   };

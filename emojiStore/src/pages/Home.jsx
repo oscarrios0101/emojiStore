@@ -2,7 +2,6 @@ import { useState, useMemo } from "react";
 import { useProducts } from "../hooks/useProducts";
 import { usePagination } from "../hooks/usePagination";
 import ProductCard from "../components/ProductCard";
-import Button from "../components/ui/Button";
 import FeaturedItem from "../components/ui/featuredItem";
 import Pagination from "../components/Pagination";
 
@@ -21,7 +20,6 @@ const Home = () => {
     totalPages,
     hasNextPage,
     hasPrevPage,
-    goToPage,
     nextPage,
     prevPage,
   } = usePagination(products, itemsPerPage);
@@ -53,7 +51,7 @@ const Home = () => {
             value={itemsPerPage}
             onChange={(e) => {
               setItemsPerPage(Number(e.target.value));
-              goToPage(1); // Reset to first page when changing items per page
+              // The value from the select input is a string, so we cast it to a Number.
             }}
             className="rounded border border-slate-700 bg-slate-800 p-2 text-slate-100"
           >
@@ -75,7 +73,6 @@ const Home = () => {
           totalPages={totalPages}
           hasNextPage={hasNextPage}
           hasPrevPage={hasPrevPage}
-          goToPage={goToPage}
           nextPage={nextPage}
           prevPage={prevPage}
         />
