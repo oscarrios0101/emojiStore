@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useCallback } from "react";
+import { createContext, useState, useEffect } from "react";
 import ItemsData from "../data/items.json";
 
 export const ProductContext = createContext();
@@ -18,32 +18,8 @@ export const ProductProvider = ({ children }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Function to get a page of products (simulated for this example)
-  const getProductsPage = useCallback(
-    (page, limit) => {
-      const startIndex = (page - 1) * limit;
-      return new Promise((resolve) => {
-        // Simulate network delay
-        setTimeout(() => {
-          const paginatedProducts = products.slice(
-            startIndex,
-            startIndex + limit,
-          );
-          resolve({
-            data: paginatedProducts,
-            total: products.length,
-            page,
-            limit,
-            totalPages: Math.ceil(products.length / limit),
-          });
-        }, 300);
-      });
-    },
-    [products],
-  );
-
   return (
-    <ProductContext.Provider value={{ products, isLoading, getProductsPage }}>
+    <ProductContext.Provider value={{ products, isLoading }}>
       {children}
     </ProductContext.Provider>
   );

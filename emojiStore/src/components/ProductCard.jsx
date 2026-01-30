@@ -31,6 +31,8 @@ const ProductCard = ({ product }) => {
           currency: "USD",
         }).format(product.price)}`}
       </p>
+      <p className="text-slate-400">Category : {product.category}</p>
+      <p className="text-slate-400">tags : {product.tags.join(", ")}</p>
       <div className="my-3 flex items-center gap-3">
         <Button
           variant="icon"
@@ -46,7 +48,7 @@ const ProductCard = ({ product }) => {
           +
         </Button>
       </div>
-      <Button onClick={handleAddToCart} className="mt-auto">
+      <Button onClick={handleAddToCart} className="mt-auto p-2">
         Add {quantity > 1 ? `${quantity} ` : ""}to Cart
       </Button>
     </div>
